@@ -1,0 +1,6 @@
+nodejs:
+    type: custom
+    buildscript: builder
+    ports:
+        www: http
+    process: node server.js
