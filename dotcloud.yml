@@ -1,6 +1,8 @@
 nodejs:
-    type: custom
-    buildscript: builder
-    ports:
-        www: http
-    process: node server.js
+  type: custom
+  buildscript: nodejs/builder
+  ports:
+    www: http
+  process: node server.js
+  approot: hellonode # change this to your application root!
+  node_version: v0.6.5
