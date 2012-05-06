@@ -21,6 +21,12 @@ as shown in the example.
     * (it won't be rebuilt each time, because it will be compared to "node --version"). 
     * You can even specify "master", but in that case, Node.js will be rebuilt at each push.
 
+3. Tell your nodejs app to listen on the port dotcloud has assigned to you.
+
+* It is an environement variable listed in the 'environment.json' file that is located in your dotcloud home directory.
+
+    app.listen(process.env['PORT_WWW'] || 8080);
+
 Enjoy!
 
 ## Examples
